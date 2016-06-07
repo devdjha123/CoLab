@@ -1,0 +1,262 @@
+ <div class="container">
+ 
+ <section class="pdhead">
+                <div class="row" style="padding-top:30px;">
+				<div class="col-md-12">
+				<div class="col-md-8"></div>
+                    <div class="col-md-2"><lable for="date">Date</lable></div>
+
+                    <div class="col-md-2">
+
+                       <input type="date" ng-model="myDate" />
+
+                        <div> </div>
+
+                    </div>
+                    <div class="col-md-2 pull-right">
+                    </div>
+                </div>
+
+   </div>
+ 
+	 <div class="row">&nbsp;</div>
+     <div class="row">
+				<div class="col-md-12">
+				<div class="col-md-8"></div>
+                    <div class="col-md-2"><lable><span ng-bind="convertToDate(myDate) | date:'medium'"></span></lable></div>
+                <div class="col-md-2">
+
+				  
+				</div>   
+      </div>              
+
+   </div>
+   <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+    <div class="row">
+				<div class="col-md-12">
+				<div class="col-md-5">
+
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" ng-repeat="image in images">
+						<a ng-click="changeBackground(image.url)">
+							<img ng-src="{{image.url}}"class="img-responsive"width="1174" height="500px">
+						</a>
+					</div>
+
+
+
+
+
+
+
+				  </div>
+                    <div class="col-md-5"></div>
+                    <div class="col-md-1 col-xs-6 col-sm-4">
+                        <img src="Image/Facebook.png" class="img-responsive pull-right" alt="Cinque Terre" width="50" ></div>
+                    <div class="col-md-1 col-xs-6 col-sm-4">
+                        <img src="Image/Twitter.png" class="img-responsive" alt="Cinque Terre" width="50" ></div>
+				</div>
+      </div>
+
+
+
+   </section>
+
+   	<div class="row">&nbsp;</div>
+			<section class="secid">
+            <div class="row">
+
+                <div class="col-md-12 bg-danger">
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <h3> <span class="label label-info">TITLE OF THE WORKSHOP:</span></h3></div>
+                    <div class="col-md-2"></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <h3> <span class="label label-info"> TERRARIUM WORKSHOP</span></h3></div>
+                    <div class="col-md-2 pull-right">
+                        <h3> <span class="label label-info">Rs. 2000/</span></h3></div>
+                </div>
+
+            </div>
+                <div class="row">&nbsp;</div>
+                <div class="row">
+
+                    <div class="col-md-12 bg-success">
+
+                        <div class="col-md-3">
+                            <h4> <span class="label label-default">Date: &nbsp;13th June 2016</span></h4></div>
+
+                        <div class="col-md-2">
+                            <h4> <span class="label label-default"> Time: &nbsp;11am – 3pm</span></h4></div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3">
+                            <h4> <span class="label label-default">Duration:&nbsp;1month&nbsp;(8classes)</span></h4></div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-warning pull-right"> ENROLL NOW </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-12 bg-info">
+                        <div class="col-md-3">
+                            <h4> <span class="label label-default">Date: &nbsp;20th June 2016</span></h4></div>
+
+                        <div class="col-md-2">
+                            <h4> <span class="label label-default"> Time: &nbsp;11am – 3pm</span></h4></div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3">
+                            <h4> <span class="label label-default">Duration:&nbsp;1month&nbsp;(8classes)</span></h4></div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-warning pull-right"> ENROLL NOW</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div classs="row">&nbsp;</div>
+                <div class="row">
+
+                    <div class="col-md-12 bg-warning">
+
+
+                        <div class="col-md-9">
+
+                                <div id="tabs" >
+                                    <ul>
+                                        <li ng-repeat="tab in tabs" class="btn btn-info"
+                                            ng-class="{active:isActiveTab(tab.url)}"
+                                            ng-click="onClickTab(tab)">{{tab.title}}</li>
+                                    </ul>
+                                    <div id="mainView">
+                                        <div ng-include="currentTab"></div>
+                                    </div>
+                                </div>
+                                <script type="text/ng-template" id="one.tpl.html">
+                                    <div id="viewOne">
+                                        <h1>About The Class</h1>
+                                        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc.</p>
+                                        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc.</p>
+                                        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc.</p>
+                                        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc.</p>
+                                    </div>
+                                </script>
+
+                                <script type="text/ng-template" id="two.tpl.html">
+                                    <div id="viewTwo">
+                                        <h1>Venue</h1>
+                                        <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu.</p>
+                                    </div>
+                                </script>
+
+                                <script type="text/ng-template" id="three.tpl.html">
+                                    <div id="viewThree">
+                                        <h1>T & C</h1>
+                                        <p>In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu.</p>
+                                    </div>
+                                </script>
+
+
+                        </div>
+
+                        <div class="col-md-3">
+                            <a href="about" class="thumbnail">
+                                <img src="Image/John Doe.png" class="img-responsive" style="width:100%;"
+                                     alt="...">
+                            </a>
+                            <p><strong>NAME & ABOUT</strong><span data-toggle="tooltip" data-placement="top" title="{{textPrd}}"> {{textPrd | limitTo :50}}{{(textPrd.length>50)?'...':''}}</span></p>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </section>
+     <div class="row">&nbsp;</div>
+     <div class="row">
+
+         <div class="col-md-12">
+        <!--  <div ng-include="'views/imageSlider.html'"></div> -->
+				<div id="myCarousel1" class="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                        <!--<section ng-include=" 'app/user/view/usershortprofile.html' "></section>-->
+										<div class="row">
+												<div class="col-xs-4 col-sm-4 col-xs-4 col-sm-4 col-md-4 col-lg-4 col-lg-4">
+														 <img class="img-responsive" src="https://farm9.staticflickr.com/8298/7881093574_8db22fbfed.jpg" />
+												</div>
+												<div class="col-xs-4 col-sm-4 col-xs-4 col-sm-4 col-md-4 col-lg-4 col-lg-4">
+													 <img class="img-responsive" src="http://dipitsisafaris.com/wp-content/uploads/2016/03/500px-x-300px-Gallery-Images-37-1.jpg" />
+												</div>
+												<div class="col-xs-4 col-sm-4 col-xs-4 col-sm-4 col-md-4 col-lg-4 col-lg-4">
+													 <img class="img-responsive" src="https://s-media-cache-ak0.pinimg.com/736x/10/35/c6/1035c64d8f6b3d3923060efc04a93398.jpg" />
+												</div>
+										</div>
+                               
+							
+                            </div>
+                            <div class="item">
+							<div class="row">
+												<div class="col-xs-4 col-sm-4 col-xs-4 col-sm-4 col-md-4 col-lg-4 col-lg-4">
+													  <img class="img-responsive" src="http://media.wepushbuttons.com.au/wp-content/uploads/2013/10/ranthems-logos-500x300.jpg" />
+												</div>
+												<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+													  <img class="img-responsive" src="http://www.bestofgiyota.com/wp-content/uploads/2016/02/interior-design-ideas-apartment-living-room-and-apartment-living-room-with-tv-best-photo-simple-small-apartment-living-room-tv-background-wall-of-marble-500x300.jpg" />
+												</div>
+												<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+													  <img class="img-responsive" src="http://media.wepushbuttons.com.au/wp-content/uploads/2014/03/birdfest-logos-500x300.png" />
+												</div>
+										</div>
+                            </div>
+                            <div class="item">
+							<div class="row">
+												<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+													 <img class="img-responsive" src="http://media.wepushbuttons.com.au/wp-content/uploads/2014/03/astc-logos-500x300.png" />
+												</div>
+												<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+													 <img class="img-responsive" src="http://noten.in/image-res.php?q=70&zc=1&w=500&h=300&src=images/posts/share-noten.jpg" />
+												</div>
+												<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+													 <img class="img-responsive" src="http://media.wepushbuttons.com.au/wp-content/uploads/2013/10/ranthems-logos-500x300.jpg" />
+												</div>
+										</div>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <a class="left carousel-control" href="#myCarousel1" data-slide="prev" target="_blank">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>                           
+                            <a class="right carousel-control" href="#myCarousel1" data-slide="next" target="_blank">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>                          
+                        </div>  
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel1" data-slide-to="1"></li>
+                            <li data-target="#myCarousel1" data-slide-to="2"></li>
+                        </ol>  
+
+                    </div>
+         </div>
+
+     </div>
+     <div class="row">&nbsp;</div>
+     <div class="row">&nbsp;</div>
+</div>

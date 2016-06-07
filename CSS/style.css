@@ -1,0 +1,172 @@
+/*Checkbox Css*/
+
+input[type=checkbox].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left: 20px;
+    height: 14px;
+    display: inline-block;
+    line-height: 14px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -14px;
+}
+
+label.css-label {
+    background-image: url(../img/checkbox3.png);
+    background-size: 15px 28px;
+    background-repeat: no-repeat;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 100;
+}
+
+
+/*End of Checkbox Css*/
+
+.btn-org {
+    color: #ffffff !important;
+    background-color: #FF3C00 !important;
+    border-color: #FF3C00 !important;
+    border-radius: 5px;
+    padding: 4px;
+    width: 36%;
+}
+
+.follow {
+    background-color: #405764;
+    width: 100%;
+    border-radius: 10px;
+    font-family: 'helve2';
+}
+.panel-footer
+{
+    padding: 1px 0px 1px 5px;
+    background-color: #DBDBDB;
+    font-family: 'helve2'
+}
+
+.followers {
+    background-color: #dbdbdb;
+    width: 100px;
+}
+
+.foll {
+    background-color: #dbdbdb;
+    width: 164px;
+    height: 100px;
+}
+
+.boxs {
+    padding: 25px;
+    padding-left: 36px;
+    font-family: Helvetica !important;
+    text-align: center;
+}
+
+.pfollow {
+    text-align: center;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 35px;
+    letter-spacing: 1px;
+    font-family: 'helve2';
+}
+
+
+/*Glyphicon */
+
+.star-or {
+    font-size: 22px;
+    color: #FF3C00 !important;
+    text-shadow: -1px 0 black, 1px 0px black, 0px -1px black, 0px -1px black;
+}
+
+.star-product {
+    font-size: 15px;
+    color: #FF3C00 !important;
+    text-shadow: -1px 0 black, 1px 0px black, 0px -1px black, 0px -1px black;
+}
+
+.glyphicon {
+    top: 0.2em !important;
+    color: rgb(91, 126, 138);
+}
+
+
+/*FOnt COloring*/
+
+.w {
+    color: #fff !important;
+}
+
+
+/*BUTTONS IN PRODUCT FILTER*/
+
+.btn {
+    border-radius: 0px;
+}
+
+.btn_rad_l {
+    border-radius: 4px 0px 0px 4px;
+    border: 2px solid rgb(91, 126, 138) !important;
+}
+
+.btn_rad_r {
+    border-radius: 0px 4px 4px 0px;
+    border: 2px solid rgb(91, 126, 138) !important;
+}
+
+.btn_rad {
+    border-radius: 0px;
+    border: 2px solid rgb(91, 126, 138) !important;
+}
+
+.btn_rad_round {
+    border-radius: 4px;
+    border: 2px solid rgb(91, 126, 138) !important;
+}
+
+
+/*PRICE RANGE*/
+
+.price-range-both.value {
+    width: 100px;
+    margin: 0 0 0 -50px;
+    top: 26px;
+}
+
+/*PARAGRAPH*/
+
+p.mar0 {
+    margin: 0px;
+    color: #465764;
+    font-weight: 600;
+}
+.coach-text
+{
+    font-size: 20px; font-weight: 600; margin-top: 14px;
+}
